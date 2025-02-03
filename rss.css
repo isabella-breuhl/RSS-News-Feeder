@@ -1,0 +1,80 @@
+.header {
+    background-color: #2D3137;
+    color: white;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.emailbutton {
+    background-color: #006FFE;
+    color: white;
+    float: right;
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    margin-top: -5px;
+}
+
+.feeder {
+    padding: 10px 40px 10px 40px;
+}
+
+.selection {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+select {
+    margin-left: 15px;
+    padding: 3px;
+    font-size: small;
+    border-color: lightgrey;
+    border-radius: 3px;
+    color: rgb(76, 76, 76);
+}
+
+.loadbutton {
+    background-color: #006FFE;
+    color: white;
+    padding: 5px 8px 5px 8px;
+    border-radius: 3px;
+    border: none;
+    margin-left: 15px;
+}
+
+.loadbutton:hover {
+    background-color: #0054c1;
+}
+
+.news {
+    padding: 20px 0px 20px 0px;
+}
+
+.feed {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.feedtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.feedtime {
+    font-family:'Courier New', Courier, monospace;
+    background-color: #2B59ED;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+}
+
+.feedinfo {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #F3F3F3;
+    font-size: small;
+    padding: 10px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>RSS Feeder</title>
+        <link rel="stylesheet" type="text/css" href="rss.css">
+    </head>
+    <body>
+        <div class="application">
+            <div class="header">
+                <span>RSS Feeder</span>
+                <button type="button" class="emailbutton">breuhl3733@uwlax.edu</button>
+            </div>
+            <div class="feeder">
+                <div class="selection">
+                    <label for="dropdown"> Select RSS Feed </label>
+                    <select id="dropdown" class="bar"></select>
+                    <button type="button" class="loadbutton" onclick="loadNewsFeeds()">Load</button>
+                </div>
+                <div class="news">
+                   <div class="feed"></div>
+                </div>
+            </div>
+        </div>
+        <script src="rss.js"></script>
+    </body>
+</html>
