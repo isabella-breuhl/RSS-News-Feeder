@@ -17,7 +17,6 @@ xml.onload = () => {
         const dropdown = document.querySelector(".bar");
 
         /* Pull feed source names into dropdown bar */
-        /* I got the map() format from : https://v1.scrimba.com/articles/react-list-array-with-map-function/ */
         dropdown.innerHTML = data.feeds.map((item, index) => `
             <div> <option value=${index + item.name}>${item.name}</option> </div>
         `).join('');
@@ -56,7 +55,6 @@ function loadNewsFeeds() {
             /* Clear previous news divs */
             newsdiv.innerHTML = "";
 
-            /* I got the append() and createElement() formats from : https://developer.mozilla.org/en-US/docs/Web/API/Element/append */
             for(let i = 0; i < data2.items.length; i++) {
                 let titlediv = document.createElement("div");
                 titlediv.className = "feedtitle";
@@ -78,12 +76,17 @@ function loadNewsFeeds() {
     xml2.send();
 }
 
+/* Pulling the index and name apart, as they're saved together in "value" */
 function updateChosenSource() {
     /* Search for the index in value */
     feedindex = document.querySelector(".bar").value.match(/\d+/);
 
     /* Search for the name in value */
-    feedname = document.querySelector(".bar").value.match(/[a-zA-Z]+/);
+    if (feedindex < 10) {
+        feedname = document.querySelector(".bar").value.slice(1);
+    } else {
+        feedname = document.querySelector(".bar").value.slice(2);
+    }
 }
 
 xml.send();
